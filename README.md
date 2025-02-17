@@ -17,6 +17,8 @@ git clone https://github.com/EliSchwartz/imagenet-sample-images.git images
 ## Run following command
 
 docker run --rm -it -d --name vit \
+--cpuset-cpus "0-8" \
+--memory "48GiB" \
 -p 0.0.0.0:9085:9085 \
 -p 0.0.0.0:9086:9086 \
 -p 0.0.0.0:9087:9087 \
