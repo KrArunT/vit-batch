@@ -1,13 +1,6 @@
 
 ## VIT batch image
 
-```sh
-docker.io/sarthakd112/vit_torchserve_batch_image
-
-## To Kill ports
-lsof -i :7070
-kill -9 <pid>
-```
 
 ```sh
 git clone https://github.com/KrArunT/vit-batch.git 
@@ -33,5 +26,13 @@ source env/bin/activate
 pip install requests pandas
 python infer_batch.py
 
+```
+### Misc
+```sh
+docker.io/sarthakd112/vit_torchserve_batch_image
+
+## To Kill ports
+lsof -i :7070
+kill -9 <pid>
 ```
 
